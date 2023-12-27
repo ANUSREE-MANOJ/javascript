@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+    <div class="container">
+        <form name="calculator">
+            <input type="text" id="calcu" name="ansr">  <br><br>
+
+            <input type="button" value="1" onclick="appendValue('1')" class="demo">
+            <input type="button" value="2" onclick="appendValue('2')" class="demo">
+            <input type="button" value="3" onclick="appendValue('3')" class="demo">
+            <input type="button" value="+" onclick="appendValue('+')" class="demo">
+            <br>
+            <input type="button" value="4" onclick="appendValue('4')" class="demo">
+            <input type="button" value="5" onclick="appendValue('5')" class="demo">
+            <input type="button" value="6" onclick="appendValue('6')" class="demo">
+            <input type="button" value="-" onclick="appendValue('-')" class="demo">
+            <br>
+            <input type="button" value="7" onclick="appendValue('7')" class="demo">
+            <input type="button" value="8" onclick="appendValue('8')" class="demo">
+            <input type="button" value="9" onclick="appendValue('9')" class="demo">
+            <input type="button" value="*" onclick="appendValue('*')" class="demo">
+            <br>
+            <input type="button" value="/" onclick="appendValue('/')" class="demo">
+            <input type="button" value="0" onclick="appendValue('0')" class="demo">
+            <input type="button" value="." onclick="appendValue('.')" class="demo">
+
+            <input type="button" value="=" onclick="calculateResult()" class="demo">
+            <br>
+            <input type="button" value="c" class="clear" onclick="clearInput()">
+        </form>
+    </div>
+
+    <script>
+        function appendValue(value) {
+            document.calculator.ansr.value += value;
+        }
+
+        function calculateResult() {
+            var inputField = document.calculator.ansr;
+            try {
+                inputField.value = eval(inputField.value);
+            } catch (error) {
+                inputField.value = "Error";
+            }
+        }
+
+        function clearInput() {
+            document.calculator.ansr.value = '';
+        }
+    </script>
+</body>
+</html>

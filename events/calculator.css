@@ -1,0 +1,28 @@
+form{
+    height: 350px;
+    width: 280px;
+    background: rgb(66, 65, 65);
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 350px;
+}
+#calcu{
+    margin-top: 50px;
+    height: 30px;
+    width: 200px;
+    border-radius: 5px;
+    
+}
+.demo{
+    height: 40px;
+    width: 35px;
+    border-radius: 5px;
+    margin: 1px;
+}
+.clear{
+    margin-top: 10px;
+    height: 45px;
+    width: 40px;
+    border-radius: 5px;
+    margin-right: 120px;
+}

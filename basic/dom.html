@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p class="demo">Lorem ipsum dolor sit amet.</p>
+    <div class="demo">futura</div>
+    <h1>anu</h1>
+    <h2>achu</h2>
+    <p id="demo4">futuralab</p>
+    <p id="demo5">futuralab</p>
+
+    <div class="ex">futura6</div>
+
+    <script>
+        // accessing with id
+        let a=document.getElementById("demo4").innerHTML="anu sree "
+        let b=document.getElementById("demo4")
+        b.style.color="red"
+        b.style.fontSize="20px";
+        document.getElementById("demo5").innerText="a"
+       
+    //    accessing with className
+        const c=document.getElementsByClassName("demo");
+       c[0].innerHTML="neethu"
+       c[1].innerText="athul"
+       c[0].style.color="violet"
+       
+    //    /accessing with Tagname  h1,h2,p,li (html tags)
+       let f=document.getElementsByTagName("h1")
+       f[0].innerHTML="maya";
+       f[0].style.color="yellow"
+         
+       
+    //    accessing with query selector
+      let g=document.querySelector("h2")
+      g.innerText="achuz"
+      g.style.color="green"
+      
+
+    //    accessing with query selectorall, using this,we can give more properties simply . class denotes dot,id denotes #.
+
+    let h=document.querySelectorAll(".demo")
+      for(i=0;i<=h.length;i++)
+         {
+            h[i].style.backgroundColor="red"
+         }
+
+         let m=document.querySelectorAll("#demo4")
+      for(i=0;i<m.length;i++)
+         {
+            m[i].style.backgroundColor="green"
+         }
+
+
+    </script>
+</body>
+</html>

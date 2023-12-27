@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="hai" style="color: red;">Welcome to futuralab</h1>
+    <div>Enter Text here <input type="text" id="box"></div>
+    <script>
+        document.getElementById("box").onkeydown=function(){
+            syntax();
+        }
+       function syntax(){
+            document.getElementById("hai").style.color="green";
+        }
+    </script>
+</body>
+</html>

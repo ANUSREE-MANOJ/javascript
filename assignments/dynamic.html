@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Dynamic Input Fields</h1>
+    
+    <div class="boxes" id="boxes">
+    <button onclick="add()">+</button><br>
+    
+    </div>
+    <script>
+            var count=1;
+
+        function add()
+        {
+            var field=document.createElement('input')
+            field.type="text";
+           
+             var button=document.createElement('button')
+             button.textContent="-"
+             button.onclick =function() {
+                remove(field,button)
+             }
+
+             //placeholder
+             var placeholderText= 'Addressline' + count
+             count++;
+
+             //set placeholder to inputfield
+             field.placeholder=placeholderText
+
+             //create new div and hold field and button
+
+             var newDiv=document.createElement("Div")
+             newDiv.appendChild(field)
+             newDiv.appendChild(button)
+
+             //append to newdiv to boxes container
+            
+             document.getElementById("boxes").appendChild(newDiv)
+            
+             function remove(inputField, button) {
+            // Remove the div containing the input field and button
+            var parentDiv = inputField.parentNode;
+            parentDiv.parentNode.removeChild(parentDiv);
+        }
+        }
+
+    </script>
+</body>
+</html>

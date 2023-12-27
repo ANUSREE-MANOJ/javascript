@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const limit = prompt("Enter a limit");
+        let a = 0;
+        let b = 1;
+        let i = 0;
+        let sum;
+
+        document.write("Fibonacci Series up to " + limit + ":</br>");
+
+        while (i < limit) {
+            document.write(a + "<br>");
+            sum = a + b;
+            a = b;
+            b = sum;
+            i++;
+        }
+    </script>
+</body>
+</html>

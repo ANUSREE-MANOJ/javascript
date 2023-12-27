@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class student
+        {
+            constructor()
+            {
+            let name;
+            let marks;
+
+            
+            }
+            setName(name)
+            {
+                this.name=name
+            }
+            getName()
+            {
+             return this.name
+            }
+
+            setMark(mark)
+            {
+                this.mark=mark
+            }
+            getMark()
+            {
+             return this.mark
+            }
+
+        }
+
+        var stud=new student()
+        
+        stud.setName("anusree")
+        stud.setMark(100)
+        document.write(stud.getName()+"" +stud.getMark())
+    </script>
+</body>
+</html>

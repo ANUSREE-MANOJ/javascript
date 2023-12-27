@@ -1,0 +1,21 @@
+if(a.length<8)
+{
+  alert("password must contain 8 characters");
+  return false;
+}
+if(!/[A-Z]/.test(a))
+{
+  alert('please include atleast one uppercase')
+  return false;
+}
+if(!/[a-z]/.test(a))
+{
+  alert('please include atleast one lowercase')
+  return false;
+}
+if(!/\d/.test(a))
+{
+  alert('please include atleast one digit')
+  return false;
+}
+return true

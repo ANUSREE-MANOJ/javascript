@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+    <div class="container">
+      <form name="calculator">
+       <input type="text" id="calcu" name="ansr">  <br><br>
+
+        <input type="button" value="1" onclick="form.ansr.value += '1' "  class="demo">
+        <input type="button" value="2" onclick="form.ansr.value += '2' "  class="demo">
+        <input type="button" value="3" onclick="form.ansr.value += '3' "  class="demo">
+        <input type="button" value="+" onclick="form.ansr.value += '+' "  class="demo">
+           <br>
+           <input type="button" value="4" onclick="form.ansr.value += '4' "  class="demo">
+           <input type="button" value="5" onclick="form.ansr.value += '5' "  class="demo">
+           <input type="button" value="6" onclick="form.ansr.value += '6' "  class="demo">
+           <input type="button" value="-" onclick="form.ansr.value += '-' "  class="demo">
+           <br>
+           <input type="button" value="7" onclick="form.ansr.value += '7' "  class="demo">
+           <input type="button" value="8" onclick="form.ansr.value += '8' "  class="demo">
+           <input type="button" value="9" onclick="form.ansr.value += '9' "  class="demo">
+           <input type="button" value="-" onclick="form.ansr.value += '*' "  class="demo">
+           <br>
+           <input type="button" value="/" onclick="form.ansr.value += '/' "  class="demo">
+           <input type="button" value="0" onclick="form.ansr.value += '0' "  class="demo">
+           <input type="button" value="." onclick="form.ansr.value += '.' "  class="demo">
+
+           <input type="button" value="="    onclick="form.ansr.value +=  eval(form.ansr.value) "  class="demo" >
+           <br>
+           <input type="button" value="c" class="clear " onclick="form.ansr.value=''  "  >
+      </form>
+   
+    </div>
+</body>
+</html>

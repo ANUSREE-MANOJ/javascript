@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+    <button onclick="add()">Create element</button>
+    <button onclick="remove()"> Remove element</button>
+</section>
+    <script>
+        function add()
+        {
+            var para=document.createElement('p')
+            para.textContent="welcome to futuralab";
+            let sec=document.querySelector('section')
+            sec.appendChild(para)
+        }
+        function remove()
+        {
+            let sec=document.querySelector('section');
+            let para=sec.querySelector("p")
+
+            sec.removeChild(para)
+        }
+
+    </script>
+</body>
+</html>
